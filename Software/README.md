@@ -79,7 +79,7 @@ The supplied software tools are designed to be run from your computer's command-
 In order to eliminate this overhead, we supply batch files (for Windows) and scripts (for Unix and Mac OS), developed by Mark Armbrust. These batch and script files enable invoking the supplied nand2tetris tools from the command line on your computer, painlessly. They can be used from any working directory on your computer, without requiring full paths to the files on which they operate. Further, they accept spaces in directory and file names, so they will work if nand2tetris is installed under a directory named, say, "My Documents".
 ​<br></br>
 
-#### **Windows Users**
+### **Windows Users**
 For the batch files to work from the command line, you must add (once and for all) the nand2tetris/toolsdirectory to your PATH variable.
 ​
 To run a batch file from command-line, type its name, without the .bat extension.
@@ -89,8 +89,9 @@ If you use Windows 7 64-bit you need to install the 64-bit version of Java so th
 You can create desktop icons and use them to invoke the interactive versions of the following supplied tools: HardwareSimulator, Assembler, CPUEmulator and VMEmulator. This can be done by finding the disk locations of the respective batch files, right-clicking on them and picking "Send to > Desktop." Edit the shortcuts' properties and set "Run" to "minimized."
 ​<br></br>
 
-#### **Usage**
-**Hardware Simulator:** To invoke the hardware simulator in interactive mode, type "HardwareSimulator" in the command line. For example:
+## **Usage**
+### **Hardware Simulator:** 
+To invoke the hardware simulator in interactive mode, type "HardwareSimulator" in the command line. For example:
 
 C:\...\projects\02>HardwareSimulator
 
@@ -118,11 +119,13 @@ Error in the associated HDL file:
 
 ​
 
-**CPU Emulator and VM Emulator:** These operation of these tools follow the same convention described above. If you invokve either tool without a parameter, the tool will work in interactive mode; if you supply a parameter (test script), the tool will run batch-style.
+### **CPU Emulator and VM Emulator:** 
+These operation of these tools follow the same convention described above. If you invokve either tool without a parameter, the tool will work in interactive mode; if you supply a parameter (test script), the tool will run batch-style.
 
 ​
 
-**Assembler:** Typing "Assembler" will start the supplied assembler in interactive mode. Typing "Assembler xxx.asm" will assemble the specified xxx.asm file and generate a file named xxx.hack, containing the translated binary code. Note that the assembler's interactive mode also enables loading and translating .asm files.
+### **Assembler:** 
+Typing "Assembler" will start the supplied assembler in interactive mode. Typing "Assembler xxx.asm" will assemble the specified xxx.asm file and generate a file named xxx.hack, containing the translated binary code. Note that the assembler's interactive mode also enables loading and translating .asm files.
 
 Successful assembly (example):
 
@@ -136,7 +139,8 @@ To compare the resulting .hack code file to some expected .hack file, use the su
 
 ​
 
-**Compiler:** Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing "JackCompiler directoryName" will compile all the Jack file that are found in the specified directory. Wildcards are not supported. Here are some examples:
+### **Compiler:** 
+Typing "JackCompiler fileName.jack" will compile the supplied Jack file. Typing "JackCompiler directoryName" will compile all the Jack file that are found in the specified directory. Wildcards are not supported. Here are some examples:
 
 Compile the current directory:
 
@@ -154,7 +158,8 @@ Compile the "Reflect" directory (for example):
 
 ​
 
-**TextComparer:** Compares two given files ignoring white space, and reports success or failure. For example, suppose you run the hardware simulator with some test script and get a comparison failure. If you want, you can then use the TextComparer to investigate the problem:
+### **TextComparer:** 
+Compares two given files ignoring white space, and reports success or failure. For example, suppose you run the hardware simulator with some test script and get a comparison failure. If you want, you can then use the TextComparer to investigate the problem:
 
     C:\...\projects\02>HardwareSimulator ALU.tst
     Comparison failure at line 24
@@ -167,7 +172,8 @@ Compile the "Reflect" directory (for example):
 
 ​
 
-**Help:** In Windows, each batch file accepts a "/?" option that shows its intended usage. In Mac and Unix, use "-h". For example:
+### **Help:** 
+In Windows, each batch file accepts a "/?" option that shows its intended usage. In Mac and Unix, use "-h". For example:
 
     C:\...\projects\09>JackCompiler /?
     Usage:
