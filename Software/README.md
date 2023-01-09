@@ -20,6 +20,9 @@ The [**tools**](Software\tools) directory contains the nand2tetris software tool
 Simulates and tests logic gates and chips implemented in the HDL (Hardware Description Language) described in the book. Used in hardware construction projects.
 
 Hardware Simulator Tutorial:
-![][ppt]
+![][test]
 
-[ppt]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[test]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+
+[ppt]: https://github.com/vovie000/Nand2Tetris/raw/main/misc/Icons/PowerPoint.png "Logo Title Text 2"
+
